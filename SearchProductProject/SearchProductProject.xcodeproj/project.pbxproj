@@ -25,6 +25,10 @@
 		92C762212813DF1000735E0F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C7621F2813DF1000735E0F /* UIViewController+Extension.swift */; };
 		92C762232813DF5200735E0F /* SearchProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762222813DF5200735E0F /* SearchProduct.swift */; };
 		92C762242813DF5200735E0F /* SearchProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762222813DF5200735E0F /* SearchProduct.swift */; };
+		92C762262813E88400735E0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762252813E88400735E0F /* UIColor+Extension.swift */; };
+		92C762272813E88400735E0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762252813E88400735E0F /* UIColor+Extension.swift */; };
+		92C762292813F01200735E0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762282813F01200735E0F /* UIView+Extension.swift */; };
+		92C7622A2813F01200735E0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762282813F01200735E0F /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,8 @@
 		92C7621B2813DE9300735E0F /* SearchProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductViewController.swift; sourceTree = "<group>"; };
 		92C7621F2813DF1000735E0F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		92C762222813DF5200735E0F /* SearchProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProduct.swift; sourceTree = "<group>"; };
+		92C762252813E88400735E0F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		92C762282813F01200735E0F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				92C7621F2813DF1000735E0F /* UIViewController+Extension.swift */,
+				92C762252813E88400735E0F /* UIColor+Extension.swift */,
+				92C762282813F01200735E0F /* UIView+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -334,8 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C762232813DF5200735E0F /* SearchProduct.swift in Sources */,
+				92C762292813F01200735E0F /* UIView+Extension.swift in Sources */,
 				92C762202813DF1000735E0F /* UIViewController+Extension.swift in Sources */,
 				92C7621C2813DE9300735E0F /* SearchProductViewController.swift in Sources */,
+				92C762262813E88400735E0F /* UIColor+Extension.swift in Sources */,
 				92C762052813CC2600735E0F /* ContentView.swift in Sources */,
 				92C762032813CC2600735E0F /* SearchProductProjectApp.swift in Sources */,
 			);
@@ -346,8 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C762242813DF5200735E0F /* SearchProduct.swift in Sources */,
+				92C7622A2813F01200735E0F /* UIView+Extension.swift in Sources */,
 				92C762212813DF1000735E0F /* UIViewController+Extension.swift in Sources */,
 				92C7621D2813DE9300735E0F /* SearchProductViewController.swift in Sources */,
+				92C762272813E88400735E0F /* UIColor+Extension.swift in Sources */,
 				92C762062813CC2600735E0F /* ContentView.swift in Sources */,
 				92C762042813CC2600735E0F /* SearchProductProjectApp.swift in Sources */,
 			);
