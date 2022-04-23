@@ -17,6 +17,14 @@
 		92C762062813CC2600735E0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C761DC2813CC2400735E0F /* ContentView.swift */; };
 		92C762072813CC2600735E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C761DD2813CC2600735E0F /* Assets.xcassets */; };
 		92C762082813CC2600735E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C761DD2813CC2600735E0F /* Assets.xcassets */; };
+		92C762192813CCDD00735E0F /* SearchProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C762182813CCDD00735E0F /* SearchProductViewController.xib */; };
+		92C7621A2813CCDD00735E0F /* SearchProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C762182813CCDD00735E0F /* SearchProductViewController.xib */; };
+		92C7621C2813DE9300735E0F /* SearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C7621B2813DE9300735E0F /* SearchProductViewController.swift */; };
+		92C7621D2813DE9300735E0F /* SearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C7621B2813DE9300735E0F /* SearchProductViewController.swift */; };
+		92C762202813DF1000735E0F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C7621F2813DF1000735E0F /* UIViewController+Extension.swift */; };
+		92C762212813DF1000735E0F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C7621F2813DF1000735E0F /* UIViewController+Extension.swift */; };
+		92C762232813DF5200735E0F /* SearchProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762222813DF5200735E0F /* SearchProduct.swift */; };
+		92C762242813DF5200735E0F /* SearchProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762222813DF5200735E0F /* SearchProduct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,10 @@
 		92C761FB2813CC2600735E0F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C761FF2813CC2600735E0F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		92C762012813CC2600735E0F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		92C762182813CCDD00735E0F /* SearchProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchProductViewController.xib; sourceTree = "<group>"; };
+		92C7621B2813DE9300735E0F /* SearchProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductViewController.swift; sourceTree = "<group>"; };
+		92C7621F2813DF1000735E0F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		92C762222813DF5200735E0F /* SearchProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProduct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +109,8 @@
 		92C761DA2813CC2400735E0F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				92C761DB2813CC2400735E0F /* SearchProductProjectApp.swift */,
+				92C7621E2813DEFC00735E0F /* Utils */,
+				92C762172813CCC200735E0F /* SearchProduct */,
 				92C761DC2813CC2400735E0F /* ContentView.swift */,
 				92C761DD2813CC2600735E0F /* Assets.xcassets */,
 			);
@@ -139,6 +152,25 @@
 				92C762012813CC2600735E0F /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		92C762172813CCC200735E0F /* SearchProduct */ = {
+			isa = PBXGroup;
+			children = (
+				92C761DB2813CC2400735E0F /* SearchProductProjectApp.swift */,
+				92C762182813CCDD00735E0F /* SearchProductViewController.xib */,
+				92C7621B2813DE9300735E0F /* SearchProductViewController.swift */,
+				92C762222813DF5200735E0F /* SearchProduct.swift */,
+			);
+			path = SearchProduct;
+			sourceTree = "<group>";
+		};
+		92C7621E2813DEFC00735E0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				92C7621F2813DF1000735E0F /* UIViewController+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C762192813CCDD00735E0F /* SearchProductViewController.xib in Resources */,
 				92C762072813CC2600735E0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C7621A2813CCDD00735E0F /* SearchProductViewController.xib in Resources */,
 				92C762082813CC2600735E0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C762232813DF5200735E0F /* SearchProduct.swift in Sources */,
+				92C762202813DF1000735E0F /* UIViewController+Extension.swift in Sources */,
+				92C7621C2813DE9300735E0F /* SearchProductViewController.swift in Sources */,
 				92C762052813CC2600735E0F /* ContentView.swift in Sources */,
 				92C762032813CC2600735E0F /* SearchProductProjectApp.swift in Sources */,
 			);
@@ -308,6 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C762242813DF5200735E0F /* SearchProduct.swift in Sources */,
+				92C762212813DF1000735E0F /* UIViewController+Extension.swift in Sources */,
+				92C7621D2813DE9300735E0F /* SearchProductViewController.swift in Sources */,
 				92C762062813CC2600735E0F /* ContentView.swift in Sources */,
 				92C762042813CC2600735E0F /* SearchProductProjectApp.swift in Sources */,
 			);
