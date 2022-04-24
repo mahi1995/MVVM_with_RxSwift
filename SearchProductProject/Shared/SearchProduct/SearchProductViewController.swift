@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RxSwift
 import UIKit
 
 class SearchProductViewController: UIViewController {
@@ -16,8 +17,10 @@ class SearchProductViewController: UIViewController {
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var feedbackLabel: UILabel!
     @IBOutlet weak var searchImageView: UIImageView!
+    @IBOutlet weak var emptyResultView: UIView!
     private let viewModel = SearchProductViewModel()
     private var viewModelInput: SearchProductViewModel.Input!
+    private let disposeBag = DisposeBag()
     
     required init() {
         super.init(nibName: SearchProductViewController.className, bundle: nil)
@@ -53,7 +56,20 @@ class SearchProductViewController: UIViewController {
     
     func setupViewModel() {
         viewModelInput = SearchProductViewModel.Input()
-        _ = viewModel.transform(input: viewModelInput)
+        let output = viewModel.transform(input: viewModelInput)
+        
+        output.state.drive(onNext: { [weak self] state in
+            switch state {
+            case .emptyView:
+                self?.closeImageView.isHidden = true
+                self?.emptyResultView.isHidden = false
+                self?.feedbackLabel.text = "Start typing now to search for products"
+            case .editMode:
+                self?.closeImageView.isHidden = false
+                self?.emptyResultView.isHidden = true
+            default: break
+            }
+        }).disposed(by: disposeBag)
     }
 }
 

@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="closeImageView" destination="SG0-By-1k9" id="fJt-Hv-INe"/>
                 <outlet property="containerView" destination="Xqr-X8-Trs" id="UvN-zx-nXV"/>
+                <outlet property="emptyResultView" destination="feA-Od-vZe" id="zDA-Ob-ij1"/>
                 <outlet property="feedbackLabel" destination="hkC-au-75X" id="9IW-TV-Ir3"/>
                 <outlet property="searchButton" destination="Ygj-7g-wlX" id="ker-KH-XtV"/>
                 <outlet property="searchImageView" destination="e0B-5V-uqN" id="W3f-Dg-ijP"/>
