@@ -29,6 +29,15 @@
 		92C762272813E88400735E0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762252813E88400735E0F /* UIColor+Extension.swift */; };
 		92C762292813F01200735E0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762282813F01200735E0F /* UIView+Extension.swift */; };
 		92C7622A2813F01200735E0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C762282813F01200735E0F /* UIView+Extension.swift */; };
+		92FB0F05281513FE0029DECF /* SearchProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB0F04281513FE0029DECF /* SearchProductViewModel.swift */; };
+		92FB0F0E28151CF90029DECF /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FB0F0928151CF90029DECF /* RxCocoa.xcframework */; };
+		92FB0F0F28151CF90029DECF /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FB0F0A28151CF90029DECF /* RxRelay.xcframework */; };
+		92FB0F1028151CF90029DECF /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FB0F0B28151CF90029DECF /* RxSwift.xcframework */; };
+		92FB0F1128151CF90029DECF /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FB0F0C28151CF90029DECF /* RxBlocking.xcframework */; };
+		92FB0F1328151D4D0029DECF /* RxBlocking.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0C28151CF90029DECF /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92FB0F1428151D4D0029DECF /* RxCocoa.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0928151CF90029DECF /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92FB0F1528151D4D0029DECF /* RxRelay.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0A28151CF90029DECF /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92FB0F1628151D4D0029DECF /* RxSwift.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0B28151CF90029DECF /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,22 @@
 			remoteInfo = "SearchProductProject (macOS)";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92FB0F1228151D2F0029DECF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92FB0F1328151D4D0029DECF /* RxBlocking.xcframework in CopyFiles */,
+				92FB0F1428151D4D0029DECF /* RxCocoa.xcframework in CopyFiles */,
+				92FB0F1528151D4D0029DECF /* RxRelay.xcframework in CopyFiles */,
+				92FB0F1628151D4D0029DECF /* RxSwift.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		92C761DB2813CC2400735E0F /* SearchProductProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductProjectApp.swift; sourceTree = "<group>"; };
@@ -67,6 +92,12 @@
 		92C762222813DF5200735E0F /* SearchProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProduct.swift; sourceTree = "<group>"; };
 		92C762252813E88400735E0F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		92C762282813F01200735E0F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		92FB0F04281513FE0029DECF /* SearchProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductViewModel.swift; sourceTree = "<group>"; };
+		92FB0F0828151CF90029DECF /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
+		92FB0F0928151CF90029DECF /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		92FB0F0A28151CF90029DECF /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		92FB0F0B28151CF90029DECF /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		92FB0F0C28151CF90029DECF /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FB0F0E28151CF90029DECF /* RxCocoa.xcframework in Frameworks */,
+				92FB0F0F28151CF90029DECF /* RxRelay.xcframework in Frameworks */,
+				92FB0F1028151CF90029DECF /* RxSwift.xcframework in Frameworks */,
+				92FB0F1128151CF90029DECF /* RxBlocking.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +144,7 @@
 				92C761F22813CC2600735E0F /* Tests iOS */,
 				92C761FE2813CC2600735E0F /* Tests macOS */,
 				92C761E32813CC2600735E0F /* Products */,
+				92FB0F0728151CF90029DECF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +199,7 @@
 		92C762172813CCC200735E0F /* SearchProduct */ = {
 			isa = PBXGroup;
 			children = (
+				92FB0F03281513E70029DECF /* ViewModel */,
 				92C761DB2813CC2400735E0F /* SearchProductProjectApp.swift */,
 				92C762182813CCDD00735E0F /* SearchProductViewController.xib */,
 				92C7621B2813DE9300735E0F /* SearchProductViewController.swift */,
@@ -181,6 +218,26 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		92FB0F03281513E70029DECF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92FB0F04281513FE0029DECF /* SearchProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92FB0F0728151CF90029DECF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92FB0F0C28151CF90029DECF /* RxBlocking.xcframework */,
+				92FB0F0928151CF90029DECF /* RxCocoa.xcframework */,
+				92FB0F0A28151CF90029DECF /* RxRelay.xcframework */,
+				92FB0F0B28151CF90029DECF /* RxSwift.xcframework */,
+				92FB0F0828151CF90029DECF /* RxTest.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +248,8 @@
 				92C761DE2813CC2600735E0F /* Sources */,
 				92C761DF2813CC2600735E0F /* Frameworks */,
 				92C761E02813CC2600735E0F /* Resources */,
+				92FB0F0628151B8A0029DECF /* Carthage */,
+				92FB0F1228151D2F0029DECF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -336,6 +395,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92FB0F0628151B8A0029DECF /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/opt/homebrew/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92C761DE2813CC2600735E0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -343,6 +423,7 @@
 			files = (
 				92C762232813DF5200735E0F /* SearchProduct.swift in Sources */,
 				92C762292813F01200735E0F /* UIView+Extension.swift in Sources */,
+				92FB0F05281513FE0029DECF /* SearchProductViewModel.swift in Sources */,
 				92C762202813DF1000735E0F /* UIViewController+Extension.swift in Sources */,
 				92C7621C2813DE9300735E0F /* SearchProductViewController.swift in Sources */,
 				92C762262813E88400735E0F /* UIColor+Extension.swift in Sources */,
@@ -517,6 +598,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3J37A429V;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -547,6 +629,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3J37A429V;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -16,6 +16,7 @@ class SearchProductViewController: UIViewController {
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var feedbackLabel: UILabel!
     @IBOutlet weak var searchImageView: UIImageView!
+    private let viewModel = SearchProductViewModel()
     
     required init() {
         super.init(nibName: SearchProductViewController.className, bundle: nil)
