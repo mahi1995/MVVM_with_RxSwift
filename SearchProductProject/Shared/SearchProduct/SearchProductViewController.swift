@@ -11,7 +11,13 @@ import UIKit
 
 class SearchProductViewController: UIViewController {
     @IBOutlet weak var textfield: UITextField!
-    @IBOutlet weak var closeImageView: UIImageView!
+    @IBOutlet weak var closeImageView: UIImageView! {
+        didSet {
+            closeImageView.isUserInteractionEnabled = true
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onCloseTapped))
+            closeImageView.addGestureRecognizer(tapGestureRecognizer)
+        }
+    }
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var shadowView: UIView!
@@ -64,12 +70,18 @@ class SearchProductViewController: UIViewController {
                 self?.closeImageView.isHidden = true
                 self?.emptyResultView.isHidden = false
                 self?.feedbackLabel.text = "Start typing now to search for products"
+                self?.textfield.text = ""
             case .editMode:
                 self?.closeImageView.isHidden = false
                 self?.emptyResultView.isHidden = true
             default: break
             }
         }).disposed(by: disposeBag)
+    }
+    
+    @objc
+    func onCloseTapped(_ sender: UITapGestureRecognizer) {
+        viewModelInput.searchTerm.accept("")
     }
 }
 

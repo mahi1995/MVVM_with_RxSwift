@@ -26,10 +26,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-pf-2Pg" userLabel="ShadowView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlM-M0-fyM" userLabel="LineView">
+                            <rect key="frame" x="0.0" y="49" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="llU-Xj-IIV"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rlM-M0-fyM" secondAttribute="bottom" id="NBJ-wl-Z1R"/>
+                        <constraint firstItem="rlM-M0-fyM" firstAttribute="leading" secondItem="yJh-pf-2Pg" secondAttribute="leading" id="R6n-qm-SJt"/>
+                        <constraint firstAttribute="height" constant="50" id="pY7-gm-MEt"/>
+                        <constraint firstAttribute="trailing" secondItem="rlM-M0-fyM" secondAttribute="trailing" id="tc3-8e-iTx"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqr-X8-Trs" userLabel="SearchHeaderView">
                     <rect key="frame" x="16" y="52" width="382" height="34"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="SG0-By-1k9">
+                        <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="SG0-By-1k9">
                             <rect key="frame" x="318" y="7" width="20" height="20"/>
                             <color key="backgroundColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -79,24 +97,6 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-pf-2Pg" userLabel="ShadowView">
-                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlM-M0-fyM" userLabel="LineView">
-                            <rect key="frame" x="0.0" y="49" width="414" height="1"/>
-                            <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="1" id="llU-Xj-IIV"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="rlM-M0-fyM" secondAttribute="bottom" id="NBJ-wl-Z1R"/>
-                        <constraint firstItem="rlM-M0-fyM" firstAttribute="leading" secondItem="yJh-pf-2Pg" secondAttribute="leading" id="R6n-qm-SJt"/>
-                        <constraint firstAttribute="height" constant="50" id="pY7-gm-MEt"/>
-                        <constraint firstAttribute="trailing" secondItem="rlM-M0-fyM" secondAttribute="trailing" id="tc3-8e-iTx"/>
-                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L86-qW-kon" userLabel="ContentView">
                     <rect key="frame" x="0.0" y="94" width="414" height="802"/>
