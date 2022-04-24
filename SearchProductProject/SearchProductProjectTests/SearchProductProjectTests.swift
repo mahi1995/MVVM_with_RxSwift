@@ -36,6 +36,18 @@ class SearchProductProjectTests: XCTestCase {
         input.searchTerm.accept("test")
         XCTAssertEqual(result.events.last?.value.element, State.editMode)
     }
+    
+    func test_deleteAllText_stateChangesToEmptyView() {
+        let result = testScheduler.createObserver(State.self)
+        let output = viewModel.transform(input: input)
+        output.state.asObservable()
+            .bind(to: result)
+            .disposed(by: disposeBag)
+        
+        testScheduler.start()
+        input.searchTerm.accept("")
+        XCTAssertEqual(result.events.last?.value.element, State.emptyView)
+    }
 
 }
 
