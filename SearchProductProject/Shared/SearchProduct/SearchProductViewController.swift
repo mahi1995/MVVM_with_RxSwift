@@ -30,6 +30,11 @@ class SearchProductViewController: UIViewController {
         setupView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        textfield.becomeFirstResponder()
+    }
+    
     func setupView() {
         searchImageView.image = UIImage(named: "searchIcon")?.withRenderingMode(.alwaysTemplate)
         searchImageView.tintColor = .lightBlue
