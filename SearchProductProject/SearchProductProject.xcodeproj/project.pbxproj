@@ -38,6 +38,8 @@
 		92FB0F1428151D4D0029DECF /* RxCocoa.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0928151CF90029DECF /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92FB0F1528151D4D0029DECF /* RxRelay.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0A28151CF90029DECF /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92FB0F1628151D4D0029DECF /* RxSwift.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0B28151CF90029DECF /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92FB0F182815213C0029DECF /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FB0F0828151CF90029DECF /* RxTest.xcframework */; };
+		92FB0F1A2815219D0029DECF /* RxTest.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92FB0F0828151CF90029DECF /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,16 @@
 				92FB0F1428151D4D0029DECF /* RxCocoa.xcframework in CopyFiles */,
 				92FB0F1528151D4D0029DECF /* RxRelay.xcframework in CopyFiles */,
 				92FB0F1628151D4D0029DECF /* RxSwift.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FB0F19281521920029DECF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92FB0F1A2815219D0029DECF /* RxTest.xcframework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FB0F182815213C0029DECF /* RxTest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +296,7 @@
 				92C761EB2813CC2600735E0F /* Sources */,
 				92C761EC2813CC2600735E0F /* Frameworks */,
 				92C761ED2813CC2600735E0F /* Resources */,
+				92FB0F19281521920029DECF /* CopyFiles */,
 			);
 			buildRules = (
 			);
