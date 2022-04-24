@@ -14,6 +14,8 @@ class SearchProductViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var shadowView: UIView!
+    @IBOutlet weak var feedbackLabel: UILabel!
+    @IBOutlet weak var searchImageView: UIImageView!
     
     required init() {
         super.init(nibName: SearchProductViewController.className, bundle: nil)
@@ -29,11 +31,14 @@ class SearchProductViewController: UIViewController {
     }
     
     func setupView() {
+        searchImageView.image = UIImage(named: "searchIcon")?.withRenderingMode(.alwaysTemplate)
+        searchImageView.tintColor = .lightBlue
         containerView.layer.cornerRadius = 5
         containerView.layer.borderWidth = 1
         containerView.layer.borderColor = UIColor.grey60.cgColor
         searchButton.layer.cornerRadius = 5
         searchButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+        closeImageView.isHidden = true
         shadowView.addBottomShadow()
     }
 }
