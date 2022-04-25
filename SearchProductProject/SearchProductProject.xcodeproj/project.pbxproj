@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92127D9A2816E91E00330E69 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92127D992816E91E00330E69 /* SearchResultCell.swift */; };
+		92127D9C2816E95200330E69 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92127D9B2816E95200330E69 /* SearchResultCell.xib */; };
 		92C761F42813CC2600735E0F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C761F32813CC2600735E0F /* Tests_iOS.swift */; };
 		92C761F62813CC2600735E0F /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C761F52813CC2600735E0F /* Tests_iOSLaunchTests.swift */; };
 		92C762002813CC2600735E0F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C761FF2813CC2600735E0F /* Tests_macOS.swift */; };
@@ -106,6 +108,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		92127D992816E91E00330E69 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		92127D9B2816E95200330E69 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		92C761DB2813CC2400735E0F /* SearchProductProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductProjectApp.swift; sourceTree = "<group>"; };
 		92C761DC2813CC2400735E0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92C761DD2813CC2600735E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +183,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92127D982816E90B00330E69 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				92127D992816E91E00330E69 /* SearchResultCell.swift */,
+				92127D9B2816E95200330E69 /* SearchResultCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		92C761D52813CC2400735E0F = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +257,7 @@
 		92C762172813CCC200735E0F /* SearchProduct */ = {
 			isa = PBXGroup;
 			children = (
+				92127D982816E90B00330E69 /* Cell */,
 				92FB0F03281513E70029DECF /* ViewModel */,
 				92C761DB2813CC2400735E0F /* SearchProductProjectApp.swift */,
 				92C762182813CCDD00735E0F /* SearchProductViewController.xib */,
@@ -443,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C762192813CCDD00735E0F /* SearchProductViewController.xib in Resources */,
+				92127D9C2816E95200330E69 /* SearchResultCell.xib in Resources */,
 				92C762072813CC2600735E0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +506,7 @@
 				92C7621C2813DE9300735E0F /* SearchProductViewController.swift in Sources */,
 				92C762262813E88400735E0F /* UIColor+Extension.swift in Sources */,
 				92C762052813CC2600735E0F /* ContentView.swift in Sources */,
+				92127D9A2816E91E00330E69 /* SearchResultCell.swift in Sources */,
 				92C762032813CC2600735E0F /* SearchProductProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

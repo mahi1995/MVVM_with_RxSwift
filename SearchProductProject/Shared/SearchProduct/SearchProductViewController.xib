@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchProductViewController">
             <connections>
                 <outlet property="closeImageView" destination="SG0-By-1k9" id="fJt-Hv-INe"/>
+                <outlet property="collectionView" destination="5Js-mt-IYb" id="AAI-RC-1yH"/>
                 <outlet property="containerView" destination="Xqr-X8-Trs" id="UvN-zx-nXV"/>
                 <outlet property="emptyResultView" destination="feA-Od-vZe" id="zDA-Ob-ij1"/>
                 <outlet property="feedbackLabel" destination="hkC-au-75X" id="9IW-TV-Ir3"/>
@@ -101,6 +102,16 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L86-qW-kon" userLabel="ContentView">
                     <rect key="frame" x="0.0" y="94" width="414" height="802"/>
                     <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5Js-mt-IYb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="802"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SNd-to-VsG">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feA-Od-vZe" userLabel="EmptyResultView">
                             <rect key="frame" x="40" y="100" width="334" height="150"/>
                             <subviews>
@@ -130,6 +141,10 @@
                     </subviews>
                     <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5Js-mt-IYb" secondAttribute="trailing" id="6Tp-6T-9W0"/>
+                        <constraint firstItem="5Js-mt-IYb" firstAttribute="leading" secondItem="L86-qW-kon" secondAttribute="leading" id="JJ4-gA-JBo"/>
+                        <constraint firstItem="5Js-mt-IYb" firstAttribute="top" secondItem="L86-qW-kon" secondAttribute="top" id="OCm-FY-9CP"/>
+                        <constraint firstAttribute="bottom" secondItem="5Js-mt-IYb" secondAttribute="bottom" id="Vzx-Ly-Bcs"/>
                         <constraint firstItem="feA-Od-vZe" firstAttribute="top" secondItem="L86-qW-kon" secondAttribute="top" constant="100" id="uyq-aB-jXM"/>
                         <constraint firstItem="feA-Od-vZe" firstAttribute="leading" secondItem="L86-qW-kon" secondAttribute="leading" constant="40" id="z0F-vo-anQ"/>
                         <constraint firstAttribute="trailing" secondItem="feA-Od-vZe" secondAttribute="trailing" constant="40" id="zIU-iO-0cN"/>

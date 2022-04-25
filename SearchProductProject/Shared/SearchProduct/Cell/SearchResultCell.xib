@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchResultCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resultCell" id="SIp-F5-QXJ">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4ID-iT-M7p">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-93-KOf">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="57"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zFg-kd-zzL">
+                                <rect key="frame" x="16" y="3.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Sdj-aB-j04"/>
+                                    <constraint firstAttribute="width" constant="50" id="t4k-Xn-aJv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some product title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-kg-1MC">
+                                <rect key="frame" x="82" y="18" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sM-et-vZ3">
+                                <rect key="frame" x="0.0" y="56" width="279" height="1"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="n05-TK-gIK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zFg-kd-zzL" firstAttribute="leading" secondItem="rnz-93-KOf" secondAttribute="leading" constant="16" id="2Ds-Er-B67"/>
+                            <constraint firstItem="zFg-kd-zzL" firstAttribute="centerY" secondItem="rnz-93-KOf" secondAttribute="centerY" id="8Tf-sB-10x"/>
+                            <constraint firstItem="wK1-kg-1MC" firstAttribute="leading" secondItem="zFg-kd-zzL" secondAttribute="trailing" constant="16" id="MIY-a0-hyY"/>
+                            <constraint firstAttribute="trailing" secondItem="9sM-et-vZ3" secondAttribute="trailing" id="MeP-Zt-0Bb"/>
+                            <constraint firstAttribute="bottom" secondItem="9sM-et-vZ3" secondAttribute="bottom" id="UA0-19-J32"/>
+                            <constraint firstItem="wK1-kg-1MC" firstAttribute="centerY" secondItem="rnz-93-KOf" secondAttribute="centerY" id="aJ1-xD-7Bo"/>
+                            <constraint firstItem="9sM-et-vZ3" firstAttribute="leading" secondItem="rnz-93-KOf" secondAttribute="leading" id="iEA-pV-bea"/>
+                            <constraint firstAttribute="trailing" secondItem="wK1-kg-1MC" secondAttribute="trailing" constant="16" id="wm5-JC-Fdi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rnz-93-KOf" secondAttribute="bottom" id="SU4-aL-5hl"/>
+                    <constraint firstAttribute="trailing" secondItem="rnz-93-KOf" secondAttribute="trailing" id="hTT-Li-EZ3"/>
+                    <constraint firstItem="rnz-93-KOf" firstAttribute="leading" secondItem="4ID-iT-M7p" secondAttribute="leading" id="lHH-LW-xAH"/>
+                    <constraint firstItem="rnz-93-KOf" firstAttribute="top" secondItem="4ID-iT-M7p" secondAttribute="top" id="w7L-gj-Q7c"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="279" height="57"/>
+            <point key="canvasLocation" x="136.95652173913044" y="65.959821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholderIcon" width="34" height="34"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

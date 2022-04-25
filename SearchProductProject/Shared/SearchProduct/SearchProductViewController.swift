@@ -10,12 +10,23 @@ import RxSwift
 import UIKit
 
 class SearchProductViewController: UIViewController {
-    @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var textfield: UITextField! {
+        didSet {
+            textfield.delegate = self
+        }
+    }
     @IBOutlet weak var closeImageView: UIImageView! {
         didSet {
             closeImageView.isUserInteractionEnabled = true
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onCloseTapped))
             closeImageView.addGestureRecognizer(tapGestureRecognizer)
+        }
+    }
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.register(UINib(nibName: "SearchResultCell", bundle: .main), forCellWithReuseIdentifier: "resultCell")
+            collectionView.delegate = self
+            collectionView.dataSource = self
         }
     }
     @IBOutlet weak var containerView: UIView!
@@ -56,7 +67,7 @@ class SearchProductViewController: UIViewController {
         searchButton.layer.cornerRadius = 5
         searchButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
         closeImageView.isHidden = true
-        textfield.delegate = self
+        collectionView.isHidden = true
         shadowView.addBottomShadow()
     }
     
@@ -67,6 +78,7 @@ class SearchProductViewController: UIViewController {
         output.state.drive(onNext: { [weak self] state in
             switch state {
             case .emptyView:
+                self?.collectionView.isHidden = true
                 self?.closeImageView.isHidden = true
                 self?.emptyResultView.isHidden = false
                 self?.feedbackLabel.text = "Start typing now to search for products"
@@ -92,5 +104,19 @@ extension SearchProductViewController: UITextFieldDelegate {
             viewModelInput.searchTerm.accept(updatedString)
         }
         return true;
+    }
+}
+
+extension SearchProductViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return collectionView.dequeueReusableCell(withReuseIdentifier: "resultCell", for: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return (CGSize(width: view.frame.width, height: 100))
     }
 }
