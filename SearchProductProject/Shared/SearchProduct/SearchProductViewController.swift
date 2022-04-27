@@ -24,7 +24,7 @@ class SearchProductViewController: UIViewController {
     }
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
-            collectionView.register(UINib(nibName: "SearchResultCell", bundle: .main), forCellWithReuseIdentifier: "resultCell")
+            collectionView.register(UINib(nibName: "SearchResultCell", bundle: nil), forCellWithReuseIdentifier: "resultCell")
             collectionView.delegate = self
             collectionView.dataSource = self
         }

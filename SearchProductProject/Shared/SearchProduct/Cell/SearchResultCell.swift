@@ -8,8 +8,11 @@
 import UIKit
 
 class SearchResultCell: UICollectionViewCell {
-    override class func awakeFromNib() {
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    override func awakeFromNib() {
         super.awakeFromNib()
-        print("~~ test")
     }
+    
 }

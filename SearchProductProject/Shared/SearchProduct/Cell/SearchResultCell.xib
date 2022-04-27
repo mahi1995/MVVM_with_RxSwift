@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchResultCell"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resultCell" id="SIp-F5-QXJ">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resultCell" id="SIp-F5-QXJ" customClass="SearchResultCell" customModule="SearchProductProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="279" height="57"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4ID-iT-M7p">
@@ -62,6 +62,10 @@
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="279" height="57"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="wK1-kg-1MC" id="aiH-sc-ToO"/>
+                <outlet property="imageView" destination="zFg-kd-zzL" id="9D0-eS-Q5f"/>
+            </connections>
             <point key="canvasLocation" x="136.95652173913044" y="65.959821428571431"/>
         </collectionViewCell>
     </objects>
